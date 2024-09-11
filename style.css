@@ -1,0 +1,45 @@
+.title,.calculadora{
+    margin: 15px;
+    padding: 0;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+.form{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.form-group{
+    display: contents;
+}
+.form label{
+    padding: 2px;
+    font-weight: bold;
+    align-self: center;
+}
+.form input:hover{
+    border-color:#ebedef;
+}
+.form button{
+    padding: 5px;
+    grid-column: span 2;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form button:hover{
+    background-color: #999999;
+}
+.resultados{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

@@ -7,33 +7,39 @@
     <title>GRUPO 2</title>
 </head>
 <body>
-    <h1>Calculadora del Índice de Masa Corporal (IMC)</h1>
+    <h1 class="title">Calculadora del Índice de Masa Corporal (IMC)</h1>
 <main class="calculadora">
-    <div>
+ <div class="form">
+    <div class="form-group">
         <label for="valorNombre">Nombre</label>
         <input type="text" id="valorNombre">
     </div>
 
-    <div>
+    <div class="form-group">
         <label for="valorApellido">Apellido</label>
         <input type="text" id="valorApellido">
     </div>
 
-    <div>
+    <div class="form-group">
         <label for="valorPeso">Peso</label>
         <input type="number" id="valorPeso" min="0">
     </div>
 
-    <div>
+    <div class="form-group">
         <label for="valorAltura">Altura</label>
         <input type="number" id="valorAltura" min="0">
     </div>
 
-    <div>
+    <div class="form-group">
         <button id="botonCalcular" onclick="resolver()">Calcular IMC</button>
-        <p>IMC: <span id="imcSpan">0.00</span></p>
-        <p><span id="paciente"></span>Nivel de peso: <span id="nivelPeso"></span></p>
+        
     </div>
+    <div>
+        <p><span id="paciente"></span></p>
+        <p>IMC: <span id="imcSpan"></span></p>
+        <p>Nivel de peso: <span id="nivelPeso"></span></p>
+        </div>
+  </div>
 </main>
 
     <script src="indexjs.js"></script>
