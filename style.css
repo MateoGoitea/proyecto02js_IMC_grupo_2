@@ -39,7 +39,6 @@
 .form button:hover{
     background-color: #999999;
 }
-.resultados{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.form .resultado{
+    grid-column: span 2;
 }
