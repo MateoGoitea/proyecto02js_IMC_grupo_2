@@ -17,7 +17,7 @@ function calculoIMC(valorAltura, valorPeso){
     let valorIMC = valorPeso / (Math.pow(valorAltura,2));
 
     const contenedorIMC = document.getElementById("imcSpan");
-    contenedorIMC.textContent = valorIMC;
+    contenedorIMC.textContent = valorIMC.toFixed(2);
 
     const contenedorPeso = document.getElementById("nivelPeso");
 
