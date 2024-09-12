@@ -6,6 +6,11 @@
     justify-content: center;
     font-family: Arial, sans-serif;
 }
+
+.body {
+	background-color: grey;
+}
+
 .form{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -14,7 +19,7 @@
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    max-width: 400px;
+    max-width: 350px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -29,16 +34,29 @@
 .form input:hover{
     border-color:#ebedef;
 }
+
 .form button{
     padding: 5px;
     grid-column: span 2;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    background-color: lightgrey;
 }
 .form button:hover{
     background-color: #999999;
 }
 .form .resultado{
     grid-column: span 2;
+}
+
+.pie {
+	background-color: black;
+	padding: 10px;
+	color: white;
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left: 0;
 }
