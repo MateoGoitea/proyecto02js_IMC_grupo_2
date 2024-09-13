@@ -29,8 +29,6 @@ body {
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     max-width: 500px;
-    width: 100%;
-}
 
 .form-group {
     margin-bottom: 15px;
@@ -51,6 +49,7 @@ body {
     font-size: 1em;
     color: #333;
 }
+
 
 .form-group input:focus {
     border-color: #007bff;
@@ -87,3 +86,19 @@ button:hover {
     color: #333;
     text-align: center;
 }
+
+.form .resultado{
+    grid-column: span 2;
+}
+
+.pie {
+	background-color: black;
+	padding: 10px;
+	color: white;
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+
