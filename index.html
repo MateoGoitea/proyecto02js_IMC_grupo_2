@@ -1,48 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>GRUPO 2</title>
+    <title>Calculadora IMC - Grupo 2</title>
 </head>
-<body class="body">
-    <h1 class="title">Calculadora del Índice de Masa Corporal (IMC)</h1>
-<main class="calculadora">
- <div class="form">
-    <div class="form-group">
-        <label for="valorNombre">Nombre</label>
-        <input type="text" id="valorNombre">
-    </div>
 
-    <div class="form-group">
-        <label for="valorApellido">Apellido</label>
-        <input type="text" id="valorApellido">
-    </div>
+<body>
+    <header>
+        <h1 class="title">Calculadora del Índice de Masa Corporal (IMC)</h1>
+    </header>
+    <main class="calculadora">
+        <div class="form">
+            <div class="form-group">
+                <label for="valorNombre">Nombre</label>
+                <input type="text" id="valorNombre" placeholder="Escribe tu nombre">
+            </div>
+          
+            <div class="form-group">
+                <label for="valorApellido">Apellido</label>
+                <input type="text" id="valorApellido" placeholder="Escribe tu apellido">
+            </div>
 
-    <div class="form-group">
-        <label for="valorPeso">Peso (Kg.)</label>
-        <input type="number" id="valorPeso" min="0">
-    </div>
 
-    <div class="form-group">
-        <label for="valorAltura">Altura (m.)</label>
-        <input type="number" id="valorAltura" min="0">
-    </div>
+            <div class="form-group">
+                <label for="valorPeso">Peso (kg)</label>
+                <input type="number" id="valorPeso" min="0" placeholder="Ej: 70.5" step="any">
+            </div>
 
-    <div class="form-group">
-        <button id="botonCalcular" onclick="resolver()">Calcular IMC</button>
-    </div>
-    <div class="resultado">
-        <p><span id="paciente"></span></p>
-        <p>IMC: <span id="imcSpan"></span></p>
-        <p>Nivel de peso: <span id="nivelPeso"></span></p>
-    </div>
-</main>
-<footer>
-	<nav class="pie">Grupo 2 - TP02 - 2024</nav>
-</footer>
+            <div class="form-group">
+                <label for="valorAltura">Altura (m)</label>
+                <input type="number" id="valorAltura" min="0" placeholder="Ej: 1.75" step="any">
+            </div>
+            <p class="ad">Usa punto para la parte decimal.</p>
 
+
+            <div class="form-group">
+                <button id="botonCalcular" onclick="resolver()">Calcular IMC</button>
+            </div>
+            <div class="resultado">
+                <p id="paciente"></p>
+                <p>IMC: <span id="imcSpan"></span></p>
+                <p>Nivel de peso: <span id="nivelPeso"></span></p>
+            </div>
+        </div>
+    </main>
     <script src="indexjs.js"></script>
 </body>
 </html>
